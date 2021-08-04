@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AP1 - Calculadora em Flask</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+        <meta charset="UTF-8">
+    </head>
+    
+    <body>
+        <div id="Calculator">
+            <h1>SMD0045 - Avaliação Parcial 1</h1>
+            <p>Função: f(x) = x² - 4x + 1</p>
+            <br/>
+
+            <form method="POST">
+                <div id="SubmitField">
+                    <label id="LabelX" for="SubmitX" class="placeholder">x = </label>
+                    <input id="SubmitX" name="SubmitX" placeholder="Digite o valor desejado"/>
+                </div>
+            </form>
+            <p id="Resultado">Resultado: {{result_expression}}</p>
+        </div>
+
+        <div id="Footer">
+            <p>João Gabriel Brilhante Cordeiro - 472078</p>
+            <p>SMD0045 - Linguagem de Programação Script</p>
+            <p>Universidade Federal do Ceará</p>
+        </div>
+
+    </body>
+</html>
